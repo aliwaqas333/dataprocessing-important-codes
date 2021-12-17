@@ -27,7 +27,7 @@ if __name__ == "__main__":
         iou, f1 = compute_iou(pred, gt)
         miou += iou
         f1 += f1
-        print(f"{image}: {iou}")
+        print(f"{image}: {iou} f1: {f1}")
     print("================")
     print(f"MIOU: {miou/len(preds)}, F1_Score: {f1/len(preds)}")
     print("================")
